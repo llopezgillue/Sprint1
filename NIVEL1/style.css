@@ -1,0 +1,198 @@
+
+* {
+
+    margin: 10px;
+    padding: 10px;
+    background-color: #7fffd4;
+    box-sizing: border-box;
+
+}
+
+.contenedor_principal {
+
+
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column nowrap;
+
+
+}
+
+/* header */
+
+
+.header {
+    background-color: #000000;
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url("header.jpg");
+    
+}
+.img-logo{
+
+
+    max-width: 90px;
+}
+
+.top {
+
+    background-color: #ff0000;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+
+    background-color: #00ffff;
+    flex: 1 1 auto;
+    height: auto;
+}
+
+.navegacion {
+
+    background-color: #7fff00;
+    flex: 5 1 auto;
+    height: auto;
+    
+
+}
+
+.media {
+
+    background-color: #0000ff;
+
+    flex: 1 1 auto;
+    height: auto;
+
+}
+
+.low {
+
+    background-color: #ffa500;
+
+}
+
+h1 {
+    background-color: #00ffff;
+
+}
+
+/* main */
+.main {
+
+    background-color: #000000;
+    display: flex;
+
+}
+
+.section {
+
+    background-color: #0000ff;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article {
+
+    background-color: #ffa500;
+    flex: 1 1 40%;
+
+}
+
+.navigator {
+
+    background-color: #ff0000;
+    flex: 1 1 100%;
+}
+
+.aside {
+
+    background-color: #a17fff;
+
+    flex: 1 1 auto;
+
+}
+
+.publicidad {
+
+    background-color: #ff00d4;
+
+}
+
+/* footer */
+
+.footer {
+
+    background-color: #000000;
+
+
+}
+
+.footerNav {
+
+    background-color: #7fff00;
+
+}
+
+/* media */
+
+
+/* tablet */
+
+@media all and (max-width: 800px) {
+
+    .top {
+
+        flex-direction: row;
+        height: auto;
+
+    }
+
+    .main {
+
+        flex-direction: column;
+
+    }
+
+    .aside {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footerNav {
+        flex: 1 1 100%;
+
+    }
+}
+
+/* mobil */
+
+@media all and (max-width:600px) {
+    .aside {
+
+        flex-direction: column;
+
+    }
+    .main{
+
+        flex-direction: column;
+    }
+    .section{
+
+        flex-direction: column;
+    }
+    .aside{
+
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+}
