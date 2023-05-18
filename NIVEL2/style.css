@@ -29,17 +29,35 @@
     width: 60px;
     height: 60px;
     max-width: 60px;
+    animation: moverIzquierda 6s ease-in;
 }
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0;
+        transform: translate(-100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
 
 .top {
     margin: 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+
 }
 
 .logo {
-    flex: 1 0 auto
+    flex: 1 0 auto;
+
+
 }
 
 .nav {
@@ -199,6 +217,7 @@ h3 {
 }
 
 
+
 @media all and (max-width: 800px) {
 
     .top {
@@ -206,12 +225,20 @@ h3 {
         display: flex;
         align-items: stretch;
         height: auto;
-       
+
     }
 
     .bottom {
         align-items: center;
         margin: auto;
+    }
+
+    .header {
+
+        background-size: cover;
+
+        background-position: center;
+
     }
 
     .icon {
@@ -261,7 +288,6 @@ h3 {
     .media {
 
         font-size: 10px;
-
 
     }
 
