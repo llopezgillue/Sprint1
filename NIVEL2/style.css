@@ -97,6 +97,20 @@
     margin: 0px 120px;
     display: flex;
     justify-content: center;
+    animation: salirAbajo 6s alternate-reverse;
+
+}
+
+@keyframes salirAbajo {
+    0% {
+        opacity: 0;
+        transform: translate(-100px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 
 }
 
@@ -178,16 +192,18 @@ h3 {
     margin: 10px;
     justify-content: space-between;
     flex-direction: column;
+    text-align: left;
 
 
 }
 
 .publicidadTitle {
     flex: 1 1 auto;
-    margin: 20px 0px 0px 50px;
+    margin: 20px 50px 0px 50px;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
+    text-align: center;
 }
 
 .publicidadText {
@@ -214,6 +230,59 @@ h3 {
     text-align: center;
     flex: 0 1 98.5%;
     background-color: rgba(242, 234, 222, 0.886);
+}
+
+@media all and (max-width:900px) {
+
+    .top {
+        flex-direction: column;
+        display: flex;
+        align-items: stretch;
+        height: auto;
+
+    }
+
+    .media {
+
+        align-items: center;
+        margin: auto;
+
+
+    }
+
+    .bottom {
+        align-items: center;
+        margin: auto;
+    }
+
+    .header {
+
+        background-size: cover;
+
+        background-position: center;
+
+    }
+
+    .icon {
+        padding: 25px;
+    }
+
+    .section {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aside {
+        border: none;
+    }
+
+    .publicidadTitle {
+        justify-content: center;
+        margin: auto;
+    }
+
 }
 
 
